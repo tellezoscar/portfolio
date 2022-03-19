@@ -1,0 +1,45 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+header {
+    background-color:#31343D;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    border: 1px solid #92CCCD;
+    background-color: #92CCCD;
+    margin: 0 10px 10px 0;
+    padding: 5px 10px 3px 40px; 
+}
+
+header a {
+    text-decoration: none;
+    color:#92CCCD;
+    justify-content: space-around;
+    
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+.about-me {
+    display: inline-block;
+    color: #31343D;
+    font-size: 50px;
+    margin:0 50px;
+    padding-top: 0;
+    padding-right: 5px;
+    border-right: 3px solid #31343D ;
+    line-height:100px;
+    justify-content: space-around;
+}
+.alignleft{
+    float:left;
+}
+
+
