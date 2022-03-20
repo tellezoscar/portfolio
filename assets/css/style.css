@@ -44,28 +44,37 @@ header nav ul li {
 }
 /*///////////header ends///////////*/
 .am {
-    position: relative;
     display: flex;
     
 }
 .about-me {
     color: #31343D;
     font-size: 50px;
-    margin:0 50px;
-    padding-right: 5px;
+    margin-left: 100px;
+    padding-right: 40px;
     border-right: 3px solid #31343D ;
     line-height:100px;
-    
-    
+}
+
+.avatar {
+    width:200px;
+    height: 200px;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+.amd {
+    justify-content: center space-between;
 }
 .aboutmep{
-    font-size: 20px;
+    font-size: 15px;
     color:black;
+    margin-left: 100px;
 }
 /*//////about me ends////////*/
 .work-section{
     display:flex;
-    flex-wrap: wrap;
+    
     
 }
 .workh2 {
@@ -75,7 +84,6 @@ header nav ul li {
     /*text-align: start;*/
     padding-right: 90px;
     margin-left: 70px;
-
     top:-100px;
 }
 
@@ -85,20 +93,19 @@ header nav ul li {
 }
 
 .project1 img{
-    display: block;
     justify-content: center;
     width:400px;
     height: 200px;
-    margin: 70px 0 100px 500px;
+    margin: 50px 0 50px 100px;
 }
 
 .project1 img:hover {
     opacity: 0.3;
 }
 
+/*///////workends//////////*/
 .contact {
     display:flex;
-    flex-wrap:wrap
 }
 
 .contacth2 {
@@ -111,15 +118,14 @@ header nav ul li {
 footer ul {
     margin-right: 20px;
     font-size: 20px;
-    
 }
 
 footer ul li {
     color: #92CCCD;
     list-style-type: none;
     display: inline-block;
-    margin-top: 100px;
-    margin-left: 200px;
+    margin-top: 50px;
+    margin-left: 52px;
     
 }
 
@@ -127,4 +133,64 @@ footer a {
     text-decoration: none;
     color:#31343D;
     border-bottom: 2px solid #31343D;
+}
+
+@media all and (max-width: 980px)  {
+    header {
+    flex-wrap: wrap;
+    }
+
+    .am {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+    }
+
+    .aboutme{
+        justify-content: center;
+    }
+    .work-section {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 780px)  {
+    header {
+    flex-wrap: wrap;
+    }
+
+    .am {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .aboutme{
+        justify-content: center;
+    }
+    .work-section {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 580px)  {
+    header {
+    flex-wrap: wrap;
+    }
+
+    .am {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+    }
+
+    .aboutme{
+        justify-content: center;
+    }
+    .work-section {
+        justify-content: center;
+    }
 }
