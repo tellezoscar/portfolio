@@ -3,8 +3,10 @@
 }
 header {
     background-color:#31343D;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+     display: flex; 
+     flex-wrap: wrap; 
+     justify-content: space-between;
+     
 }
 
 header h1 {
@@ -13,6 +15,7 @@ header h1 {
     margin: 0 10px 10px 0;
     padding: 5px 10px 3px 40px;  
     display: inline-block;
+    
 }
 
 header a {
@@ -39,32 +42,30 @@ header nav ul li {
     margin-left: 55px;
     
 }
-
-/* header ul {
+/*///////////header ends///////////*/
+.am {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-  } */
-
-.about-me {
     
-    display:flex;
-    flex-wrap: wrap;
+}
+.about-me {
     color: #31343D;
     font-size: 50px;
     margin:0 50px;
     padding-right: 5px;
     border-right: 3px solid #31343D ;
     line-height:100px;
-    justify-content: space-around;
+    
+    
 }
-.alignleft {
-    float:left;
+.aboutmep{
+    font-size: 20px;
+    color:black;
 }
-
+/*//////about me ends////////*/
 .work-section{
     display:flex;
-   
+    flex-wrap: wrap;
     
 }
 .workh2 {
@@ -72,7 +73,7 @@ header nav ul li {
     color:#31343D;
     font-size:50px;
     /*text-align: start;*/
-    padding-right: 100px;
+    padding-right: 90px;
     margin-left: 70px;
 
     top:-100px;
@@ -88,5 +89,42 @@ header nav ul li {
     justify-content: center;
     width:400px;
     height: 200px;
-    margin: 70px 0 100px 50px;
+    margin: 70px 0 100px 500px;
+}
+
+.project1 img:hover {
+    opacity: 0.3;
+}
+
+.contact {
+    display:flex;
+    flex-wrap:wrap
+}
+
+.contacth2 {
+    font-size: 50px;
+    color:#31343D;
+    padding-right: 30px;
+    margin-left: 70px;
+}
+
+footer ul {
+    margin-right: 20px;
+    font-size: 20px;
+    
+}
+
+footer ul li {
+    color: #92CCCD;
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 200px;
+    
+}
+
+footer a {
+    text-decoration: none;
+    color:#31343D;
+    border-bottom: 2px solid #31343D;
 }
